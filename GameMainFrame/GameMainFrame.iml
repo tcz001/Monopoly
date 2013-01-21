@@ -22,7 +22,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="enigma-console" level="project" />
+    <orderEntry type="library" name="enigma-all_en_US" level="project" />
   </component>
 </module>
 

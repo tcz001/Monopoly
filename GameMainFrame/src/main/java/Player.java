@@ -6,4 +6,15 @@
  * To change this template use File | Settings | File Templates.
  */
 public class Player {
+    int id;
+    String name;
+    int property;
+    int point;
+    int bomb;
+    int block;
+
+    Player(int id, int property) {
+        this.id = id;
+        this.property = property;
+    }
 }
