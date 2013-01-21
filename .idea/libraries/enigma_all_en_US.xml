@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="enigma-all_en_US">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/enigma-all_en_US.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
