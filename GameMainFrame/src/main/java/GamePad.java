@@ -2,37 +2,66 @@ import enigma.console.Console;
 import enigma.console.TextAttributes;
 import enigma.core.Enigma;
 
-import java.awt.Color;
+import java.awt.*;
 import java.io.*;
+import java.util.ArrayList;
+import java.util.Arrays;
 
 /**
- * Created with IntelliJ IDEA.
  * User: tcz
  * Date: 13-1-15
  * Time: 下午5:11
- * To change this template use File | Settings | File Templates.
  */
 public class GamePad {
-    static Map map;
+    Map map;
+    ArrayList<Player> players;
 
-    GamePad(Map map) {
+    GamePad(Map map, ArrayList<Player> players) {
         this.map = map;
+        this.players = players;
     }
 
-   public void print() throws IOException {
+    public void print() throws IOException {
         while (true) {
-            map.print();
-            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-            console.setTextAttributes(new TextAttributes(Color.BLUE));
-            System.out.println("钱夫人>\t");
-            bufferedReader.readLine();
-            console.setTextAttributes(new TextAttributes(Color.YELLOW));
-            System.out.println("阿土伯>\t");
-            bufferedReader.readLine();
+            for (Player aPlayer : players) {
+                System.out.flush();
+                print(map);
+                print(aPlayer);
+                readCommand();
+            }
         }
     }
 
-    private static final Console console = Enigma.getConsole("helloworld");
+    private void print(Player player) throws IOException {
+        console.setTextAttributes(new TextAttributes(player.color));
+        System.out.println(player.name + "\t");
+    }
+
+    private void print(Map map) {
+        console.setTextAttributes(new TextAttributes(Color.WHITE));
+        System.out.print("S");
+        System.out.print(map.streets.get(0).cellString);
+        System.out.print("H");
+        System.out.print(map.streets.get(1).cellString);
+        System.out.print("T\n");
+        for (int i = 0; i < map.height - 2; i++) {
+            char[] cells = new char[map.width - 2];
+            Arrays.fill(cells, ' ');
+            System.out.println("$" + new String(cells) + map.streets.get(2).cellString.charAt(i));
+        }
+        System.out.print("M");
+        System.out.print(map.streets.get(3).cellString);
+        System.out.print("P");
+        System.out.print(map.streets.get(4).cellString);
+        System.out.print("G\n");
+    }
+
+    private void readCommand() throws IOException {
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        bufferedReader.readLine();
+    }
+
+    private static Console console = Enigma.getConsole("Monopoly");
 }
 
 
