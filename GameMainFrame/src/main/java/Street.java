@@ -1,3 +1,7 @@
+import enigma.console.TextAttributes;
+
+import java.awt.*;
+import java.util.ArrayList;
 import java.util.Arrays;
 
 /**
@@ -6,18 +10,29 @@ import java.util.Arrays;
  * Time: 下午9:26
  */
 public class Street {
-    String cellString;
+    ArrayList<Cell> cells;
 
-    Street(String cellString) {
-        if (cellString.length() == 13 || cellString.length() == 6)
-            this.cellString = cellString;
+
+    Street(String cells) {
+        this.cells = new ArrayList<Cell>();
+        if (cells.length() == 13 || cells.length() == 6)
+            for (char cell : cells.toCharArray()) {
+                this.cells.add(new BuildingCell(cell));
+            }
     }
 
     Street(char ch, int i) {
-        if (i== 13 || i== 6){
+        this.cells = new ArrayList<Cell>();
+        if (i == 13 || i == 6) {
             char[] cells = new char[i];
-            Arrays.fill(cells,ch);
-            this.cellString = new String(cells);
+            Arrays.fill(cells, ch);
+            for (char cell : cells){
+                this.cells.add(new BuildingCell(cell));
+            }
         }
+    }
+
+    void print(GamePad gamePad) {
+        for (Cell cell : cells) cell.print(gamePad);
     }
 }

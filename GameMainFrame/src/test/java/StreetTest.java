@@ -9,6 +9,6 @@ public class StreetTest {
     @Test
     public void testCellString(){
         Street street=new Street("0000000000000");
-        assert street.cellString.length() == 13;
+        assert street.cells.size() == 13;
     }
 }
