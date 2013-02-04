@@ -1,6 +1,11 @@
-import enigma.console.TextAttributes;
+package model.map;
 
-import java.awt.*;
+import model.cell.HospitalCell;
+import model.cell.MineCell;
+import model.cell.StartCell;
+import model.cell.ToyCell;
+import model.gamepad.GamePad;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -12,11 +17,11 @@ import java.util.Arrays;
 public class Map {
     ArrayList<Street> streets;
     final int width=29,height=8;
-    Map(ArrayList<Street> streets){
+    public Map(ArrayList<Street> streets){
         this.streets = streets;
     }
 
-    void print(GamePad gamePad) {
+    public void print(GamePad gamePad) {
         new StartCell().print(gamePad);
         streets.get(0).print(gamePad);
         new HospitalCell().print(gamePad);

@@ -1,4 +1,7 @@
+package model.cell;
+
 import enigma.console.TextAttributes;
+import model.gamepad.GamePad;
 
 import java.awt.*;
 
@@ -7,8 +10,8 @@ import java.awt.*;
  * Date: 13-2-2
  * Time: 下午1:52
  */
-public class BuildingCell extends Cell{
-    BuildingCell(char mark) {
+public class BuildingCell extends Cell {
+    public BuildingCell(char mark) {
         super(mark);
     }
 
@@ -18,7 +21,7 @@ public class BuildingCell extends Cell{
     }
 
     @Override
-    void print(GamePad gamePad) {
+    public void print(GamePad gamePad) {
         gamePad.console.setTextAttributes(new TextAttributes(Color.WHITE));
         System.out.print(mark);
     }

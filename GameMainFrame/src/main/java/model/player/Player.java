@@ -1,4 +1,10 @@
+package model.player;
+
+import enigma.console.TextAttributes;
+import model.gamepad.GamePad;
+
 import java.awt.*;
+import java.io.IOException;
 import java.util.Random;
 
 /**
@@ -7,15 +13,15 @@ import java.util.Random;
  * Time: 下午7:13
  */
 public class Player {
-    int id;
-    String name;
-    Color color;
+    public int id;
+    public String name;
+    public Color color;
     int property;
     int point;
     int bomb;
     int block;
 
-    Player(int id, int property) {
+    public Player(int id, int property) {
         this.id = id;
         switch (id){
             case 1: name="钱夫人";color=Color.BLUE;break;
@@ -28,7 +34,12 @@ public class Player {
         this.bomb=0;
         this.block=0;
     }
-    int roll(){
+    public int roll(){
         return (new Random().nextInt(6))+1;
+    }
+
+    public void print(GamePad gamePad) throws IOException {
+        gamePad.console.setTextAttributes(new TextAttributes(color));
+        System.out.println(name + " >");
     }
 }

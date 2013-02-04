@@ -1,6 +1,9 @@
-import enigma.console.TextAttributes;
+package model.map;
 
-import java.awt.*;
+import model.cell.Cell;
+import model.cell.BuildingCell;
+import model.gamepad.GamePad;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -10,19 +13,19 @@ import java.util.Arrays;
  * Time: 下午9:26
  */
 public class Street {
-    ArrayList<Cell> cells;
+    public ArrayList<Cell> cells;
 
 
-    Street(String cells) {
-        this.cells = new ArrayList<Cell>();
+    public Street(String cells) {
+        this.cells = new ArrayList<>();
         if (cells.length() == 13 || cells.length() == 6)
             for (char cell : cells.toCharArray()) {
                 this.cells.add(new BuildingCell(cell));
             }
     }
 
-    Street(char ch, int i) {
-        this.cells = new ArrayList<Cell>();
+    public Street(char ch, int i) {
+        this.cells = new ArrayList<>();
         if (i == 13 || i == 6) {
             char[] cells = new char[i];
             Arrays.fill(cells, ch);

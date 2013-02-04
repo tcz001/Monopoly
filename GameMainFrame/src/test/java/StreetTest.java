@@ -1,3 +1,4 @@
+import model.map.Street;
 import org.junit.Test;
 
 /**

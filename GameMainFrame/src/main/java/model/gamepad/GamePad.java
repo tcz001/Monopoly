@@ -1,8 +1,11 @@
-import enigma.console.Console;
-import enigma.console.TextAttributes;
-import enigma.core.Enigma;
+package model.gamepad;
 
-import java.io.*;
+import enigma.console.Console;
+import enigma.core.Enigma;
+import model.map.Map;
+import model.player.Player;
+
+import java.io.IOException;
 import java.util.ArrayList;
 
 /**
@@ -13,9 +16,9 @@ import java.util.ArrayList;
 public class GamePad {
     Map map;
     ArrayList<Player> players;
-    Console console = Enigma.getConsole();
+    public Console console = Enigma.getConsole();
 
-    GamePad(Map map, ArrayList<Player> players) {
+    public GamePad(Map map, ArrayList<Player> players) {
         this.map = map;
         this.players = players;
     }
@@ -25,15 +28,10 @@ public class GamePad {
             for (Player aPlayer : players) {
                 console.getTextWindow().setCursorPosition(0,0);
                 map.print(this);
-                print(aPlayer);
+                aPlayer.print(this);
                 readCommand();
             }
         }
-    }
-
-    private void print(Player player) throws IOException {
-        console.setTextAttributes(new TextAttributes(player.color));
-        System.out.println(player.name + " >");
     }
 
     private void readCommand() throws IOException {

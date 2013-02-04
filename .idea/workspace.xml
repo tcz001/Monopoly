@@ -1,27 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="59804048-0c36-4df0-bb35-0042b68808c5" name="Default" comment="" />
+    <list default="true" id="59804048-0c36-4df0-bb35-0042b68808c5" name="Default" comment="">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/GameMainFrame/src/main/java/BuildingCell.java" afterPath="$PROJECT_DIR$/GameMainFrame/src/main/java/model/cell/BuildingCell.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/GameMainFrame/src/main/java/Cell.java" afterPath="$PROJECT_DIR$/GameMainFrame/src/main/java/model/cell/Cell.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/GameMainFrame/src/main/java/GamePad.java" afterPath="$PROJECT_DIR$/GameMainFrame/src/main/java/model/gamepad/GamePad.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/GameMainFrame/src/main/java/HospitalCell.java" afterPath="$PROJECT_DIR$/GameMainFrame/src/main/java/model/cell/HospitalCell.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/GameMainFrame/src/main/java/Map.java" afterPath="$PROJECT_DIR$/GameMainFrame/src/main/java/model/map/Map.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/GameMainFrame/src/main/java/MineCell.java" afterPath="$PROJECT_DIR$/GameMainFrame/src/main/java/model/cell/MineCell.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/GameMainFrame/src/main/java/Player.java" afterPath="$PROJECT_DIR$/GameMainFrame/src/main/java/model/player/Player.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/GameMainFrame/src/main/java/StartCell.java" afterPath="$PROJECT_DIR$/GameMainFrame/src/main/java/model/cell/StartCell.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/GameMainFrame/src/main/java/Street.java" afterPath="$PROJECT_DIR$/GameMainFrame/src/main/java/model/map/Street.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/GameMainFrame/src/main/java/ToyCell.java" afterPath="$PROJECT_DIR$/GameMainFrame/src/main/java/model/cell/ToyCell.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GameMainFrame/GameMainFrame.iml" afterPath="$PROJECT_DIR$/GameMainFrame/GameMainFrame.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GameMainFrame/src/test/java/GamePadTest.java" afterPath="$PROJECT_DIR$/GameMainFrame/src/test/java/GamePadTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GameMainFrame/src/test/java/MapTest.java" afterPath="$PROJECT_DIR$/GameMainFrame/src/test/java/MapTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GameMainFrame/src/test/java/PlayerTest.java" afterPath="$PROJECT_DIR$/GameMainFrame/src/test/java/PlayerTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GameMainFrame/src/test/java/StreetTest.java" afterPath="$PROJECT_DIR$/GameMainFrame/src/test/java/StreetTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="Monopoly.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="59804048-0c36-4df0-bb35-0042b68808c5" time="1359790408937" ignored="false" />
-    <file path="/fragment.java" changelist="59804048-0c36-4df0-bb35-0042b68808c5" time="1359786049729" ignored="false" />
+    <file path="/Dummy.txt" changelist="59804048-0c36-4df0-bb35-0042b68808c5" time="1359958120202" ignored="false" />
+    <file path="/fragment.java" changelist="59804048-0c36-4df0-bb35-0042b68808c5" time="1359958303722" ignored="false" />
     <file path="/MainTest.java" changelist="59804048-0c36-4df0-bb35-0042b68808c5" time="1358156885465" ignored="false" />
     <file path="/pom.xml" changelist="59804048-0c36-4df0-bb35-0042b68808c5" time="1358162305322" ignored="false" />
     <file path="/Main.java" changelist="59804048-0c36-4df0-bb35-0042b68808c5" time="1358166069058" ignored="false" />
     <file path="$PROJECT_DIR$/../marsrover/Marsrovers/lib/src/net/torchz/mars/control/Navigator.java" changelist="59804048-0c36-4df0-bb35-0042b68808c5" time="1358162984933" ignored="false" />
     <file path="/Map.java" changelist="59804048-0c36-4df0-bb35-0042b68808c5" time="1359785854170" ignored="false" />
-    <file path="/Street.java" changelist="59804048-0c36-4df0-bb35-0042b68808c5" time="1359786532230" ignored="false" />
+    <file path="/Street.java" changelist="59804048-0c36-4df0-bb35-0042b68808c5" time="1359958533493" ignored="false" />
     <file path="/StreetTest.java" changelist="59804048-0c36-4df0-bb35-0042b68808c5" time="1359785444333" ignored="false" />
     <file path="/MapTest.java" changelist="59804048-0c36-4df0-bb35-0042b68808c5" time="1358174018393" ignored="false" />
     <file path="/GamePadTest.java" changelist="59804048-0c36-4df0-bb35-0042b68808c5" time="1358774567426" ignored="false" />
     <file path="/GamePad.java" changelist="59804048-0c36-4df0-bb35-0042b68808c5" time="1359790148633" ignored="false" />
     <file path="/PlayerTest.java" changelist="59804048-0c36-4df0-bb35-0042b68808c5" time="1358770194290" ignored="false" />
-    <file path="/Player.java" changelist="59804048-0c36-4df0-bb35-0042b68808c5" time="1359773733874" ignored="false" />
+    <file path="/Player.java" changelist="59804048-0c36-4df0-bb35-0042b68808c5" time="1359959575469" ignored="false" />
     <file path="/PlayerQueue.java" changelist="59804048-0c36-4df0-bb35-0042b68808c5" time="1358771737076" ignored="false" />
     <file path="/Cell.java" changelist="59804048-0c36-4df0-bb35-0042b68808c5" time="1359786435879" ignored="false" />
     <file path="/StartCell.java" changelist="59804048-0c36-4df0-bb35-0042b68808c5" time="1359775317240" ignored="false" />
-    <file path="/HospitalCell.java" changelist="59804048-0c36-4df0-bb35-0042b68808c5" time="1359783830601" ignored="false" />
+    <file path="/HospitalCell.java" changelist="59804048-0c36-4df0-bb35-0042b68808c5" time="1359958202709" ignored="false" />
     <file path="/ToyCell.java" changelist="59804048-0c36-4df0-bb35-0042b68808c5" time="1359783813512" ignored="false" />
     <file path="/BuildingCell.java" changelist="59804048-0c36-4df0-bb35-0042b68808c5" time="1359785608732" ignored="false" />
     <file path="/MineCell.java" changelist="59804048-0c36-4df0-bb35-0042b68808c5" time="1359786666917" ignored="false" />
@@ -41,6 +60,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -55,8 +75,8 @@
         <option name="CONDITION_ENABLED" value="true" />
         <option name="CLASS_FILTERS_ENABLED" value="false" />
         <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
+        <option name="CONDITION" value="&#13;&#13;JAVA" />
+        <option name="LOG_MESSAGE" value="&#13;&#13;JAVA" />
       </breakpoint>
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -71,11 +91,10 @@
         <option name="CONDITION_ENABLED" value="true" />
         <option name="CLASS_FILTERS_ENABLED" value="false" />
         <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
+        <option name="CONDITION" value="&#13;&#13;JAVA" />
+        <option name="LOG_MESSAGE" value="&#13;&#13;JAVA" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -84,39 +103,7 @@
     <favorites_list name="Monopoly" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="GamePad.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/GameMainFrame/src/main/java/GamePad.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="16" selection-start="483" selection-end="483" vertical-scroll-proportion="0.17272727">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GamePadTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GameMainFrame/src/test/java/GamePadTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="16" selection-start="340" selection-end="340" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DefaultConsoleImpl.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/lib/enigma-all_en_US.jar!/enigma/console/DefaultConsoleImpl.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="4" selection-start="599" selection-end="599" vertical-scroll-proportion="-11.4">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -134,22 +121,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/GameMainFrame/src/test/java/MapTest.java" />
-        <option value="$PROJECT_DIR$/GameMainFrame/src/test/java/GamePadTest.java" />
-        <option value="$PROJECT_DIR$/GameMainFrame/src/main/java/Player.java" />
-        <option value="$PROJECT_DIR$/GameMainFrame/src/main/java/Monopoly/Cell/Cell.java" />
-        <option value="$PROJECT_DIR$/GameMainFrame/src/test/java/StreetTest.java" />
-        <option value="$PROJECT_DIR$/GameMainFrame/src/main/java/BuildingCell.java" />
-        <option value="$PROJECT_DIR$/GameMainFrame/src/main/java/Map.java" />
-        <option value="$PROJECT_DIR$/GameMainFrame/src/main/java/Cell.java" />
-        <option value="$PROJECT_DIR$/GameMainFrame/src/main/java/HospitalCell.java" />
-        <option value="$PROJECT_DIR$/GameMainFrame/src/main/java/StartCell.java" />
-        <option value="$PROJECT_DIR$/GameMainFrame/src/main/java/Street.java" />
         <option value="$PROJECT_DIR$/GameMainFrame/src/main/java/ToyCell.java" />
         <option value="$PROJECT_DIR$/GameMainFrame/src/main/java/MineCell.java" />
         <option value="$PROJECT_DIR$/GameMainFrame/src/main/java/GamePadConsole.java" />
         <option value="$PROJECT_DIR$/GameMainFrame/src/main/java/GameConsoleImpl.java" />
         <option value="$PROJECT_DIR$/GameMainFrame/src/main/java/GamePad.java" />
+        <option value="$PROJECT_DIR$/GameMainFrame/src/main/java/Cell/HospitalCell.java" />
+        <option value="$PROJECT_DIR$/GameMainFrame/src/main/java/model/Cell.java" />
+        <option value="$PROJECT_DIR$/GameMainFrame/src/main/java/model/cell/Cell.java" />
+        <option value="$PROJECT_DIR$/GameMainFrame/src/main/java/model/map/Street.java" />
+        <option value="$PROJECT_DIR$/GameMainFrame/src/main/java/model/cell/MineCell.java" />
+        <option value="$PROJECT_DIR$/GameMainFrame/src/main/java/model/cell/StartCell.java" />
+        <option value="$PROJECT_DIR$/GameMainFrame/src/main/java/model/cell/ToyCell.java" />
+        <option value="$PROJECT_DIR$/GameMainFrame/src/main/java/model/cell/BuildingCell.java" />
+        <option value="$PROJECT_DIR$/GameMainFrame/src/main/java/model/cell/HospitalCell.java" />
+        <option value="$PROJECT_DIR$/GameMainFrame/src/main/java/model/player/Player.java" />
+        <option value="$PROJECT_DIR$/GameMainFrame/src/main/java/model/gamepad/GamePad.java" />
       </list>
     </option>
   </component>
@@ -164,10 +151,56 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="754" />
+    <option name="x" value="65" />
+    <option name="y" value="24" />
+    <option name="width" value="1301" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Android Lint</id>
+          </State>
+          <State>
+            <id>Code maturity issues</id>
+          </State>
+          <State>
+            <id>General</id>
+          </State>
+          <State>
+            <id>Java language level migration aids</id>
+          </State>
+          <State>
+            <id>Javadoc issues</id>
+          </State>
+          <State>
+            <id>Performance issues</id>
+          </State>
+          <State>
+            <id>Plugin DevKit</id>
+          </State>
+          <State>
+            <id>TestNG</id>
+          </State>
+          <State>
+            <id>Threading issues</id>
+          </State>
+          <State>
+            <id>XPath</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Abstraction issues</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -195,85 +228,18 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
+      <pane id="PackagesPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="Monopoly" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enigma-all_en_US" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enigma-all_en_US.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Monopoly" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enigma-all_en_US" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enigma-all_en_US.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enigma" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Monopoly" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enigma-all_en_US" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enigma-all_en_US.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enigma" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="console" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Monopoly" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-          </PATH>
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="Monopoly" />
@@ -329,6 +295,10 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -351,15 +321,121 @@
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="player" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
-        </subPane>
-      </pane>
-      <pane id="PackagesPane">
-        <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="Monopoly" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GameMainFrame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="map" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Monopoly" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GameMainFrame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gamepad" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Monopoly" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GameMainFrame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cell" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Default">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -368,7 +444,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_directory_selection" value="$PROJECT_DIR$/GameMainFrame/src/main/java" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="OverrideImplement.combined" value="false" />
@@ -376,7 +452,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="options.lastSelected" value="preferences.keymap" />
+    <property name="options.lastSelected" value="reference.projectsettings.compiler.javacompiler" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/enigma-all_en_US.jar!/" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
@@ -391,10 +467,10 @@
     <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateTestDialog.Recents.Supers">
+    <key name="CreateTestDialog.RecentsKey">
       <recent name="" />
     </key>
-    <key name="CreateTestDialog.RecentsKey">
+    <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="MoveMembersDialog.RECENTS_KEY">
@@ -516,7 +592,9 @@
         <option name="TRANSPORT" value="0" />
         <option name="LOCAL" value="true" />
       </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
     <configuration default="false" name="GamePadTest" type="JUnit" factoryName="JUnit">
@@ -526,7 +604,7 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="GamePadTest" />
       <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="$CLASS$" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -542,7 +620,9 @@
         <option name="TRANSPORT" value="0" />
         <option name="LOCAL" value="true" />
       </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
     <configuration default="false" name="MapTest" type="JUnit" factoryName="JUnit">
@@ -552,7 +632,7 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MapTest" />
       <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="$CLASS$" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -578,7 +658,7 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="PlayerTest" />
       <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="$CLASS$" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -604,7 +684,7 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="StreetTest" />
       <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="$CLASS$" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -701,7 +781,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="65" y="24" width="1301" height="744" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32996634" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -709,16 +789,16 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3956229" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32996634" sideWeight="0.49772382" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328" sideWeight="0.5003984" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32828283" sideWeight="0.4969651" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328" sideWeight="0.49402392" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32996634" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928678" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24962063" sideWeight="0.6043771" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32996634" sideWeight="0.4969651" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26533866" sideWeight="0.6704" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3296" sideWeight="0.4969651" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32996634" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -782,16 +862,27 @@
     <MESSAGE value="GamePad set Cursor and Color" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+    </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/GameMainFrame/src/main/java/Main.java">
+    <entry file="jar://$PROJECT_DIR$/lib/enigma-all_en_US.jar!/enigma/console/DefaultConsoleImpl.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="125" selection-end="125" vertical-scroll-proportion="0.05757576">
+        <state line="16" column="4" selection-start="599" selection-end="599" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameMainFrame/src/test/java/GamePadTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="25" selection-start="25" selection-end="25" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -805,105 +896,101 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/GameMainFrame/src/test/java/MapTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="557" selection-end="557" vertical-scroll-proportion="0.90909094">
+        <state line="33" column="0" selection-start="732" selection-end="732" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GameMainFrame/src/main/java/MineCell.java">
+    <entry file="file://$PROJECT_DIR$/GameMainFrame/src/test/java/PlayerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="36" selection-start="36" selection-end="36" vertical-scroll-proportion="0.0">
+        <state line="24" column="61" selection-start="577" selection-end="577" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GameMainFrame/src/main/java/BuildingCell.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="385" selection-end="385" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GameMainFrame/src/main/java/HospitalCell.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="16" selection-start="192" selection-end="192" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GameMainFrame/src/main/java/ToyCell.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="15" selection-start="178" selection-end="178" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GameMainFrame/src/main/java/Street.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="12" selection-start="761" selection-end="761" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/GameMainFrame/src/test/java/StreetTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="24" selection-start="223" selection-end="223" vertical-scroll-proportion="0.0">
+        <state line="0" column="23" selection-start="23" selection-end="23" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GameMainFrame/src/main/java/Map.java">
+    <entry file="file://$PROJECT_DIR$/GameMainFrame/src/main/java/model/gamepad/GamePad.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="37" selection-start="801" selection-end="801" vertical-scroll-proportion="0.0">
+        <state line="0" column="21" selection-start="21" selection-end="21" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GameMainFrame/src/main/java/Cell.java">
+    <entry file="file://$PROJECT_DIR$/GameMainFrame/src/main/java/model/cell/ToyCell.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="12" selection-start="195" selection-end="195" vertical-scroll-proportion="0.8060606">
+        <state line="22" column="16" selection-start="405" selection-end="405" vertical-scroll-proportion="0.5564516">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GameMainFrame/src/main/java/StartCell.java">
+    <entry file="file://$PROJECT_DIR$/GameMainFrame/src/main/java/model/cell/StartCell.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="15" selection-start="180" selection-end="180" vertical-scroll-proportion="0.17272727">
+        <state line="17" column="0" selection-start="285" selection-end="285" vertical-scroll-proportion="0.3951613">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameMainFrame/src/main/java/model/cell/MineCell.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="19" selection-start="411" selection-end="411" vertical-scroll-proportion="0.7633588">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameMainFrame/src/main/java/model/cell/HospitalCell.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="26" selection-start="232" selection-end="232" vertical-scroll-proportion="0.34351146">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GameMainFrame/src/test/java/GamePadTest.java">
+    <entry file="file://$PROJECT_DIR$/GameMainFrame/src/main/java/model/cell/BuildingCell.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="16" selection-start="340" selection-end="340" vertical-scroll-proportion="0.0">
+        <state line="25" column="9" selection-start="536" selection-end="536" vertical-scroll-proportion="0.65648854">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/enigma-all_en_US.jar!/enigma/console/DefaultConsoleImpl.class">
+    <entry file="file://$PROJECT_DIR$/GameMainFrame/src/main/java/model/cell/Cell.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="4" selection-start="599" selection-end="599" vertical-scroll-proportion="-11.4">
+        <state line="16" column="22" selection-start="228" selection-end="228" vertical-scroll-proportion="0.610687">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GameMainFrame/src/main/java/GamePad.java">
+    <entry file="file://$PROJECT_DIR$/GameMainFrame/src/main/java/model/player/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="16" selection-start="483" selection-end="483" vertical-scroll-proportion="0.17272727">
+        <state line="40" column="32" selection-start="900" selection-end="900" vertical-scroll-proportion="0.7251908">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameMainFrame/src/main/java/model/map/Street.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="0" selection-start="841" selection-end="841" vertical-scroll-proportion="0.7251908">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameMainFrame/src/main/java/model/map/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="0" selection-start="1217" selection-end="1217" vertical-scroll-proportion="0.8778626">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

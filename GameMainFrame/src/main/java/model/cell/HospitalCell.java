@@ -1,4 +1,7 @@
+package model.cell;
+
 import enigma.console.TextAttributes;
+import model.gamepad.GamePad;
 
 import java.awt.*;
 
@@ -9,17 +12,17 @@ import java.awt.*;
  */
 public class HospitalCell extends Cell {
 
-    HospitalCell() {
+    public HospitalCell() {
         super('H');
     }
 
     @Override
     void action() {
-
+        //To change body of implemented methods use File | Settings | File Templates.
     }
 
     @Override
-    void print(GamePad gamePad) {
+    public void print(GamePad gamePad) {
         gamePad.console.setTextAttributes(new TextAttributes(Color.RED));
         System.out.print(mark);
     }

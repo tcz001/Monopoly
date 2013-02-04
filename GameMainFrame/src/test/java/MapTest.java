@@ -1,3 +1,5 @@
+import model.map.Map;
+import model.map.Street;
 import org.junit.*;
 
 import java.util.ArrayList;

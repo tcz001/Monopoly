@@ -1,7 +1,9 @@
+import model.gamepad.GamePad;
+import model.map.Street;
+import model.player.Player;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.awt.*;
 import java.util.*;
 
 /**
@@ -12,7 +14,7 @@ import java.util.*;
 public class GamePadTest {
     ArrayList<Street> streets = new ArrayList<Street>();
     Street street;
-    Map map;
+    model.map.Map map;
     ArrayList<Player> players;
     GamePad gamePad;
 
@@ -28,7 +30,7 @@ public class GamePadTest {
         streets.add(street);
         street = new Street('0', 13);
         streets.add(street);
-        map = new Map(streets);
+        map = new model.map.Map(streets);
         players= new ArrayList<Player>();
         players.add( new Player(1,1000));
         players.add( new Player(2,1000));

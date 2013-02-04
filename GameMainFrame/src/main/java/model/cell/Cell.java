@@ -1,3 +1,7 @@
+package model.cell;
+
+import model.gamepad.GamePad;
+
 /**
  * User: tcz
  * Date: 13-1-29
@@ -12,5 +16,5 @@ public abstract class Cell {
 
     abstract void action();
 
-    abstract void print(GamePad gamePad);
+    public abstract void print(GamePad gamePad);
 }
