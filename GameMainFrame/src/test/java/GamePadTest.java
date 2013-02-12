@@ -31,7 +31,7 @@ public class GamePadTest {
         street = new Street('0', 13);
         streets.add(street);
         map = new model.map.Map(streets);
-        players= new ArrayList<Player>();
+        players= new ArrayList<>();
         players.add( new Player(1,1000));
         players.add( new Player(2,1000));
         players.add( new Player(3,1000));

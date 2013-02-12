@@ -8,13 +8,11 @@ import java.awt.*;
 /**
  * User: tcz
  * Date: 13-2-2
- * Time: 下午2:14
+ * Time: 上午11:06
  */
-public class MineCell extends Cell {
-    int point;
-    public MineCell(int point) {
-        super('$');
-        this.point = point;
+public class MagicCell extends Cell {
+    public MagicCell() {
+        super('M');
     }
 
     @Override
@@ -24,7 +22,8 @@ public class MineCell extends Cell {
 
     @Override
     public void print(GamePad gamePad) {
-        gamePad.console.setTextAttributes(new TextAttributes(Color.ORANGE));
+        gamePad.console.setTextAttributes(new TextAttributes(Color.LIGHT_GRAY));
         System.out.print(mark);
     }
 }
+
