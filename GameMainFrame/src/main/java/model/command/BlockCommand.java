@@ -1,5 +1,6 @@
 package model.command;
 
+import model.map.Map;
 import model.player.Player;
 
 /**
@@ -10,7 +11,7 @@ import model.player.Player;
  * To change this template use File | Settings | File Templates.
  */
 public class BlockCommand implements Command {
-    public BlockCommand(Player player) {
+    public BlockCommand(Player player, Map map) {
     }
 
     @Override

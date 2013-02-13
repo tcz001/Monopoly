@@ -1,5 +1,6 @@
 package model.command;
 
+import model.map.Map;
 import model.player.Player;
 
 /**
@@ -11,11 +12,14 @@ import model.player.Player;
  */
 public class RollCommand implements Command{
     private Player player;
-    public RollCommand(Player player){
+    private Map map;
+    public RollCommand(Player player,Map map){
         this.player=player;
+        this.map=map;
     }
     @Override
     public void execute() {
         player.roll();
+        map.playerActionOnCell(player);
     }
 }

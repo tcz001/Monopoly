@@ -29,13 +29,9 @@ public class Street {
         if (i == 13 || i == 6) {
             char[] cells = new char[i];
             Arrays.fill(cells, ch);
-            for (char cell : cells){
+            for (char cell : cells) {
                 this.cells.add(new BuildingCell(cell));
             }
         }
-    }
-
-    void print(GamePad gamePad) {
-        for (Cell cell : cells) cell.print(gamePad);
     }
 }

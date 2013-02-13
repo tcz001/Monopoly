@@ -37,7 +37,7 @@ public class Map {
         cells.add(new MineCell(60));
     }
 
-    public void print(GamePad gamePad) {
+    public void printOnPad(GamePad gamePad) {
         gamePad.console.getTextWindow().setCursorPosition(0, 0);
         for (int i = 0; i < height + 3; i++) {
             for (int j = 0; j < width + 2; j++) {
@@ -47,21 +47,25 @@ public class Map {
         }
         gamePad.console.getTextWindow().setCursorPosition(1, 1);
         for (int i = 0; i < width; i++)
-            this.cells.get(i).print(gamePad);
+            this.cells.get(i).printOnPad(gamePad);
         for (int i = 0; i < height - 2; i++) {
             gamePad.console.getTextWindow().setCursorPosition(1, i + 2);
             char[] cells = new char[width - 2];
             Arrays.fill(cells, ' ');
-            this.cells.get(width * 2 + height * 2 - 5 - i).print(gamePad);
+            this.cells.get(width * 2 + height * 2 - 5 - i).printOnPad(gamePad);
             System.out.print(new String(cells));
-            this.cells.get(width + i).print(gamePad);
+            this.cells.get(width + i).printOnPad(gamePad);
         }
         gamePad.console.getTextWindow().setCursorPosition(1, height);
         for (int i = 0; i < width; i++)
-            cells.get(width * 2 + height - 3 - i).print(gamePad);
+            cells.get(width * 2 + height - 3 - i).printOnPad(gamePad);
         for (Player aPlayer : gamePad.players) {
             aPlayer.printOnPad(gamePad);
         }
         gamePad.console.getTextWindow().setCursorPosition(0, height + 2);
+    }
+
+    public void playerActionOnCell(Player player) {
+        this.cells.get(player.getPosition()).action(player);
     }
 }

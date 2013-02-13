@@ -31,34 +31,43 @@ public class GamePad {
     public void print() throws IOException {
         while (true) {
             for (Player aPlayer : players) {
+                flush();
                 console.getTextWindow().setCursorPosition(0, 0);
-                map.print(this);
-                aPlayer.print(this);
-                command(aPlayer);
+                map.printOnPad(this);
+                aPlayer.printPrompt(this);
+                readCommand(aPlayer);
             }
         }
     }
 
-    private void command(Player player) throws IOException {
+    private void flush() {
+        console.getTextWindow().setCursorPosition(0, 0);
+        for (int i = 0; i < console.getTextWindow().getColumns(); i++) {
+            for (int j = 0; j < console.getTextWindow().getRows(); j++) {
+                System.out.print(' ');
+            }
+            System.out.println();
+        }
+    }
+
+    private void readCommand(Player player) throws IOException {
         Command command = null;
         HashSet<String> commandSet = new HashSet<>();
-        commandSet.add("Roll");
         commandSet.add("roll");
-        commandSet.add("Block");
         commandSet.add("block");
         String commandString;
         do {
-            console.getTextWindow().setCursorPosition(8, console.getTextWindow().getCursorY() - 1);
+            console.getTextWindow().setCursorPosition(16, console.getTextWindow().getCursorY() - 1);
             commandString = console.readLine();
         }
-        while (!commandSet.contains(commandString));
-        switch (commandString) {
-            case "Roll":
-                command = new RollCommand(player);
+        while (!commandSet.contains(commandString.toLowerCase()));
+        switch (commandString.toLowerCase()) {
+            case "roll":
+                command = new RollCommand(player,map);
 
                 break;
-            case "Block":
-                command = new BlockCommand(player);
+            case "block":
+                command = new BlockCommand(player,map);
 
                 break;
         }

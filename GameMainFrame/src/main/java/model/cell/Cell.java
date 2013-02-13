@@ -1,6 +1,7 @@
 package model.cell;
 
 import model.gamepad.GamePad;
+import model.player.Player;
 
 /**
  * User: tcz
@@ -14,7 +15,7 @@ public abstract class Cell {
         this.mark = mark;
     }
 
-    abstract void action();
+    public abstract void action(Player player);
 
-    public abstract void print(GamePad gamePad);
+    public abstract void printOnPad(GamePad gamePad);
 }

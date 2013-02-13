@@ -22,6 +22,7 @@ public class Player {
     int bomb;
     int block;
     int robot;
+
     int position;
 
     public Player(int id, int property) {
@@ -56,27 +57,27 @@ public class Player {
     }
 
     public int roll() {
-        int rollnum = new Random().nextInt(20) + 1;
+        int rollnum = new Random().nextInt(6) + 1;
         this.position = (position + rollnum) % 69;
         return rollnum;
     }
 
-    public void print(GamePad gamePad) throws IOException {
+    public void printPrompt(GamePad gamePad) throws IOException {
         gamePad.console.setTextAttributes(new TextAttributes(color));
-        System.out.println(name + " >");
+        System.out.println(name + " 位于 "+ position +" >");
         gamePad.console.setTextAttributes(new TextAttributes(Color.white));
     }
 
     public void printOnPad(GamePad gamePad) {
         int x = 0, y = 0;
         if (position < 29) {
-            x = position+1;
+            x = position + 1;
             y = 0;
         } else if (position >= 29 && position < 35) {
             x = 30;
             y = position - 27;
         } else if (position >= 35 && position < 64) {
-            x = 64 -position;
+            x = 64 - position;
             y = 9;
         } else if (position >= 64) {
             x = 0;
@@ -86,5 +87,9 @@ public class Player {
         gamePad.console.setTextAttributes(new TextAttributes(color));
         System.out.print(mark);
         gamePad.console.setTextAttributes(new TextAttributes(Color.white));
+    }
+
+    public int getPosition() {
+        return position;
     }
 }
