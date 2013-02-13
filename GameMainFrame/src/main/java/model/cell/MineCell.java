@@ -1,4 +1,8 @@
+package model.cell;
+
 import enigma.console.TextAttributes;
+import model.gamepad.GamePad;
+import model.player.Player;
 
 import java.awt.*;
 
@@ -7,18 +11,20 @@ import java.awt.*;
  * Date: 13-2-2
  * Time: 下午2:14
  */
-public class MineCell extends Cell{
-    MineCell() {
+public class MineCell extends Cell {
+    int point;
+    public MineCell(int point) {
         super('$');
+        this.point = point;
     }
 
     @Override
-    void action() {
+    public void action(Player player) {
         //To change body of implemented methods use File | Settings | File Templates.
     }
 
     @Override
-    void print(GamePad gamePad) {
+    public void printOnPad(GamePad gamePad) {
         gamePad.console.setTextAttributes(new TextAttributes(Color.ORANGE));
         System.out.print(mark);
     }

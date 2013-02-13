@@ -1,3 +1,4 @@
+import model.player.Player;
 import org.junit.Before;
 import org.junit.Test;
 
