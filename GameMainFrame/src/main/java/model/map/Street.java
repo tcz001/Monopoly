@@ -19,8 +19,8 @@ public class Street {
     public Street(String cells) {
         this.cells = new ArrayList<>();
         if (cells.length() == 13 || cells.length() == 6)
-            for (char cell : cells.toCharArray()) {
-                this.cells.add(new BuildingCell(cell));
+            for (char ignored : cells.toCharArray()) {
+                this.cells.add(new BuildingCell());
             }
     }
 
@@ -29,8 +29,8 @@ public class Street {
         if (i == 13 || i == 6) {
             char[] cells = new char[i];
             Arrays.fill(cells, ch);
-            for (char cell : cells) {
-                this.cells.add(new BuildingCell(cell));
+            for (char ignored : cells) {
+                this.cells.add(new BuildingCell());
             }
         }
     }

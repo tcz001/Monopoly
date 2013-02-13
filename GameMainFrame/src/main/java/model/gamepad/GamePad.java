@@ -32,8 +32,6 @@ public class GamePad {
         while (true) {
             for (Player aPlayer : players) {
                 flush();
-                console.getTextWindow().setCursorPosition(0, 0);
-                map.printOnPad(this);
                 aPlayer.printPrompt(this);
                 readCommand(aPlayer);
             }
@@ -48,6 +46,8 @@ public class GamePad {
             }
             System.out.println();
         }
+        console.getTextWindow().setCursorPosition(0, 0);
+        map.printOnPad(this);
     }
 
     private void readCommand(Player player) throws IOException {
@@ -73,6 +73,7 @@ public class GamePad {
         }
         Invoker invoker = new Invoker(command);
         invoker.action();
+        this.flush();
     }
 
 }
