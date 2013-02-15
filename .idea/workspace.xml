@@ -2,26 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59804048-0c36-4df0-bb35-0042b68808c5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GameMainFrame/src/main/java/model/command/BlockCommand.java" afterPath="$PROJECT_DIR$/GameMainFrame/src/main/java/model/command/BlockCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GameMainFrame/src/main/java/model/cell/BuildingCell.java" afterPath="$PROJECT_DIR$/GameMainFrame/src/main/java/model/cell/BuildingCell.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GameMainFrame/src/main/java/model/cell/Cell.java" afterPath="$PROJECT_DIR$/GameMainFrame/src/main/java/model/cell/Cell.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GameMainFrame/src/main/java/model/gamepad/GamePad.java" afterPath="$PROJECT_DIR$/GameMainFrame/src/main/java/model/gamepad/GamePad.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GameMainFrame/src/main/java/model/cell/GiftCell.java" afterPath="$PROJECT_DIR$/GameMainFrame/src/main/java/model/cell/GiftCell.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GameMainFrame/src/main/java/model/cell/HospitalCell.java" afterPath="$PROJECT_DIR$/GameMainFrame/src/main/java/model/cell/HospitalCell.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GameMainFrame/src/main/java/model/cell/MagicCell.java" afterPath="$PROJECT_DIR$/GameMainFrame/src/main/java/model/cell/MagicCell.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GameMainFrame/src/main/java/model/map/Map.java" afterPath="$PROJECT_DIR$/GameMainFrame/src/main/java/model/map/Map.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GameMainFrame/src/main/java/model/cell/MineCell.java" afterPath="$PROJECT_DIR$/GameMainFrame/src/main/java/model/cell/MineCell.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GameMainFrame/src/main/java/model/player/Player.java" afterPath="$PROJECT_DIR$/GameMainFrame/src/main/java/model/player/Player.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GameMainFrame/src/main/java/model/cell/PoisonCell.java" afterPath="$PROJECT_DIR$/GameMainFrame/src/main/java/model/cell/PoisonCell.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GameMainFrame/src/main/java/model/command/RollCommand.java" afterPath="$PROJECT_DIR$/GameMainFrame/src/main/java/model/command/RollCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GameMainFrame/src/main/java/model/cell/StartCell.java" afterPath="$PROJECT_DIR$/GameMainFrame/src/main/java/model/cell/StartCell.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GameMainFrame/src/main/java/model/map/Street.java" afterPath="$PROJECT_DIR$/GameMainFrame/src/main/java/model/map/Street.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GameMainFrame/src/main/java/model/cell/ToyCell.java" afterPath="$PROJECT_DIR$/GameMainFrame/src/main/java/model/cell/ToyCell.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Monopoly.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="59804048-0c36-4df0-bb35-0042b68808c5" time="1360748651611" ignored="false" />
+    <file path="/Dummy.txt" changelist="59804048-0c36-4df0-bb35-0042b68808c5" time="1360748739220" ignored="false" />
     <file path="/fragment.java" changelist="59804048-0c36-4df0-bb35-0042b68808c5" time="1360661479689" ignored="false" />
     <file path="/MainTest.java" changelist="59804048-0c36-4df0-bb35-0042b68808c5" time="1358156885465" ignored="false" />
     <file path="/pom.xml" changelist="59804048-0c36-4df0-bb35-0042b68808c5" time="1358162305322" ignored="false" />
@@ -128,7 +113,7 @@
       <file leaf-file-name="Cell.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/GameMainFrame/src/main/java/model/cell/Cell.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="18" selection-start="219" selection-end="219" vertical-scroll-proportion="0.49118388">
+            <state line="14" column="18" selection-start="219" selection-end="219" vertical-scroll-proportion="0.32554257">
               <folding />
             </state>
           </provider>
@@ -767,7 +752,11 @@
       <created>1360667456993</created>
       <updated>1360667456993</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add roll method">
+      <created>1360748755648</created>
+      <updated>1360748755649</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -792,9 +781,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-5" width="1303" height="774" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32854864" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -802,12 +791,12 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328" sideWeight="0.5003984" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32535884" sideWeight="0.49402392" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32535884" sideWeight="0.49402392" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32854864" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928678" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37051794" sideWeight="0.67464113" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37051794" sideWeight="0.672" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34500876" sideWeight="0.4969651" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -977,7 +966,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/GameMainFrame/src/main/java/model/cell/Cell.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="18" selection-start="219" selection-end="219" vertical-scroll-proportion="0.49118388">
+        <state line="14" column="18" selection-start="219" selection-end="219" vertical-scroll-proportion="0.32554257">
           <folding />
         </state>
       </provider>
