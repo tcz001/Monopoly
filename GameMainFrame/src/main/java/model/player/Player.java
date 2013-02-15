@@ -13,21 +13,25 @@ import java.util.Random;
  * Time: 下午7:13
  */
 public class Player {
-    public int id;
-    public String name;
-    public char mark;
-    public Color color;
-    int property;
-    int point;
-    int bomb;
-    int block;
-    int robot;
-
-    int position;
+    private int id;
+    private String name;
+    private char mark;
+    private Color color;
+    private int property;
+    private int point;
+    private int bomb;
+    private int block;
+    private int robot;
+    private int position;
 
     public Player(int id, int property) {
         this.id = id;
         switch (id) {
+            case 0:
+                name = "no name";
+                mark = 'N';
+                color = Color.WHITE;
+                break;
             case 1:
                 name = "钱夫人";
                 mark = 'Q';
@@ -64,7 +68,7 @@ public class Player {
 
     public void printPrompt(GamePad gamePad) throws IOException {
         gamePad.console.setTextAttributes(new TextAttributes(color));
-        System.out.println(name + " 位于 "+ position +" >");
+        System.out.println(name + " 位于 " + position + " >");
         gamePad.console.setTextAttributes(new TextAttributes(Color.white));
     }
 
@@ -89,7 +93,63 @@ public class Player {
         gamePad.console.setTextAttributes(new TextAttributes(Color.white));
     }
 
+    public int getId() {
+        return id;
+    }
+
     public int getPosition() {
         return position;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public char getMark() {
+        return mark;
+    }
+
+    public int getRobot() {
+        return robot;
+    }
+
+    public Color getColor() {
+        return color;
+    }
+
+    public int getProperty() {
+        return property;
+    }
+
+    public int getPoint() {
+        return point;
+    }
+
+    public int getBomb() {
+        return bomb;
+    }
+
+    public void setProperty(int property) {
+        this.property = property;
+    }
+
+    public void setPoint(int point) {
+        this.point = point;
+    }
+
+    public void setBomb(int bomb) {
+        this.bomb = bomb;
+    }
+
+    public void setBlock(int block) {
+        this.block = block;
+    }
+
+    public void setRobot(int robot) {
+        this.robot = robot;
+    }
+
+    public int getBlock() {
+        return block;
     }
 }

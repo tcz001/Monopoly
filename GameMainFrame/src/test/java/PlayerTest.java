@@ -20,8 +20,8 @@ public class PlayerTest {
 
     @Test
     public void testRoll() {
-        assert players.get(3).id == 4;
-        assert players.get(3).color == Color.YELLOW;
+        assert players.get(3).getId() == 4;
+        assert players.get(3).getColor() == Color.YELLOW;
         for (int i = 0; i < 100; i++) assert (players.get(3).roll() >= 1 && players.get(3).roll() <= 6);
     }
 }
