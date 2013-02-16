@@ -16,21 +16,21 @@ public class Street {
     public ArrayList<Cell> cells;
 
 
-    public Street(String cells) {
+    public Street(String cellString,int rawPrice) {
         this.cells = new ArrayList<>();
-        if (cells.length() == 13 || cells.length() == 6)
-            for (char ignored : cells.toCharArray()) {
-                this.cells.add(new BuildingCell());
+        if (cellString.length() == 13 || cellString.length() == 6)
+            for (char ignored : cellString.toCharArray()) {
+                this.cells.add(new BuildingCell(rawPrice));
             }
     }
 
-    public Street(char ch, int i) {
+    public Street(char ch, int i,int rawPrice) {
         this.cells = new ArrayList<>();
         if (i == 13 || i == 6) {
             char[] cells = new char[i];
             Arrays.fill(cells, ch);
             for (char ignored : cells) {
-                this.cells.add(new BuildingCell());
+                this.cells.add(new BuildingCell(rawPrice));
             }
         }
     }

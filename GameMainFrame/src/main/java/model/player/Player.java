@@ -13,18 +13,14 @@ import java.util.Random;
  * Time: 下午7:13
  */
 public class Player {
-    private int id;
-    private String name;
-    private char mark;
-    private Color color;
-    private int property;
-    private int point;
-    private int bomb;
-    private int block;
-    private int robot;
+    private final int id;
+    private final String name;
+    private final char mark;
+    private final Color color;
     private int position;
+    public Property property;
 
-    public Player(int id, int property) {
+    public Player(int id, int money) {
         this.id = id;
         switch (id) {
             case 0:
@@ -52,12 +48,13 @@ public class Player {
                 mark = 'J';
                 color = Color.YELLOW;
                 break;
+            default:
+                name = "no name";
+                mark = 'N';
+                color = Color.WHITE;
+                break;
         }
-        this.property = property;
-        this.point = 0;
-        this.bomb = 0;
-        this.block = 0;
-        this.robot = 0;
+        property = new Property(money, 0, 0, 0, 0);
     }
 
     public int roll() {
@@ -66,10 +63,16 @@ public class Player {
         return rollnum;
     }
 
-    public void printPrompt(GamePad gamePad) throws IOException {
+    public void printPrompt(GamePad gamePad) {
         gamePad.console.setTextAttributes(new TextAttributes(color));
-        System.out.println(name + " 位于 " + position + " >");
+        System.out.print(name + " 位于 " + position + " >");
         gamePad.console.setTextAttributes(new TextAttributes(Color.white));
+    }
+
+    public void printInfo(GamePad gamePad) {
+        gamePad.erase();
+        System.out.println(name + " money " + property.getMoney());
+        gamePad.console.readLine();
     }
 
     public void printOnPad(GamePad gamePad) {
@@ -109,47 +112,8 @@ public class Player {
         return mark;
     }
 
-    public int getRobot() {
-        return robot;
-    }
-
     public Color getColor() {
         return color;
     }
 
-    public int getProperty() {
-        return property;
-    }
-
-    public int getPoint() {
-        return point;
-    }
-
-    public int getBomb() {
-        return bomb;
-    }
-
-    public void setProperty(int property) {
-        this.property = property;
-    }
-
-    public void setPoint(int point) {
-        this.point = point;
-    }
-
-    public void setBomb(int bomb) {
-        this.bomb = bomb;
-    }
-
-    public void setBlock(int block) {
-        this.block = block;
-    }
-
-    public void setRobot(int robot) {
-        this.robot = robot;
-    }
-
-    public int getBlock() {
-        return block;
-    }
 }

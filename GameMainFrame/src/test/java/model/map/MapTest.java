@@ -1,5 +1,4 @@
-import model.map.Map;
-import model.map.Street;
+package model.map;
 import org.junit.*;
 
 import java.util.ArrayList;
@@ -15,15 +14,15 @@ public class MapTest {
     @Before
     public void init(){
         Street street;
-        street = new Street('0',13);
+        street = new Street('0',13,200);
         streets.add(street);
-        street = new Street('0',13);
+        street = new Street('0',13,200);
         streets.add(street);
-        street = new Street('0',6);
+        street = new Street('0',6,500);
         streets.add(street);
-        street = new Street('0',13);
+        street = new Street('0',13,300);
         streets.add(street);
-        street = new Street('0',13);
+        street = new Street('0',13,300);
         streets.add(street);
     }
     @Test

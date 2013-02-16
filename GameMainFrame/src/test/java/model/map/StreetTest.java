@@ -1,4 +1,4 @@
-import model.map.Street;
+package model.map;
 import org.junit.Test;
 
 /**
@@ -9,7 +9,7 @@ import org.junit.Test;
 public class StreetTest {
     @Test
     public void testCellString(){
-        Street street=new Street("0000000000000");
+        Street street=new Street("0000000000000",300);
         assert street.cells.size() == 13;
     }
 }

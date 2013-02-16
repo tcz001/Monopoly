@@ -38,13 +38,7 @@ public class Map {
     }
 
     public void printOnPad(GamePad gamePad) {
-        gamePad.console.getTextWindow().setCursorPosition(0, 0);
-        for (int i = 0; i < height + 3; i++) {
-            for (int j = 0; j < width + 2; j++) {
-                System.out.print(' ');
-            }
-            System.out.println();
-        }
+        gamePad.erase();
         gamePad.console.getTextWindow().setCursorPosition(1, 1);
         for (int i = 0; i < width; i++)
             this.cells.get(i).printOnPad(gamePad);

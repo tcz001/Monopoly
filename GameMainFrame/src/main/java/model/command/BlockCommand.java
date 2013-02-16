@@ -1,6 +1,6 @@
 package model.command;
 
-import model.map.Map;
+import model.gamepad.GamePad;
 import model.player.Player;
 
 /**
@@ -8,10 +8,9 @@ import model.player.Player;
  * User: tcz
  * Date: 13-2-12
  * Time: 上午11:38
- * To change this template use File | Settings | File Templates.
  */
 public class BlockCommand implements Command {
-    public BlockCommand(Player player, Map map) {
+    public BlockCommand(Player player, GamePad gamePad) {
     }
 
     @Override

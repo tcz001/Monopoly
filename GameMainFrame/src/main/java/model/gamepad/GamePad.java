@@ -2,10 +2,7 @@ package model.gamepad;
 
 import enigma.console.Console;
 import enigma.core.Enigma;
-import model.command.BlockCommand;
-import model.command.Command;
-import model.command.Invoker;
-import model.command.RollCommand;
+import model.command.*;
 import model.map.Map;
 import model.player.Player;
 
@@ -19,7 +16,7 @@ import java.util.HashSet;
  * Time: 下午5:11
  */
 public class GamePad {
-    Map map;
+    public Map map;
     public ArrayList<Player> players;
     public Console console = Enigma.getConsole();
 
@@ -32,13 +29,17 @@ public class GamePad {
         while (true) {
             for (Player aPlayer : players) {
                 flush();
-                aPlayer.printPrompt(this);
                 readCommand(aPlayer);
             }
         }
     }
 
-    private void flush() {
+    public void flush() {
+        erase();
+        map.printOnPad(this);
+    }
+
+    public void erase() {
         console.getTextWindow().setCursorPosition(0, 0);
         for (int i = 0; i < console.getTextWindow().getColumns(); i++) {
             for (int j = 0; j < console.getTextWindow().getRows(); j++) {
@@ -47,33 +48,37 @@ public class GamePad {
             System.out.println();
         }
         console.getTextWindow().setCursorPosition(0, 0);
-        map.printOnPad(this);
     }
 
     private void readCommand(Player player) throws IOException {
         Command command = null;
         HashSet<String> commandSet = new HashSet<>();
         commandSet.add("roll");
+        commandSet.add("info");
         commandSet.add("block");
         String commandString;
         do {
-            console.getTextWindow().setCursorPosition(16, console.getTextWindow().getCursorY() - 1);
+            flush();
+            player.printPrompt(this);
+            console.getTextWindow().setCursorPosition(16, 10);
             commandString = console.readLine();
         }
         while (!commandSet.contains(commandString.toLowerCase()));
         switch (commandString.toLowerCase()) {
             case "roll":
-                command = new RollCommand(player,map);
-
+                command = new RollCommand(player, this);
+                break;
+            case "info":
+                command = new InfoCommand(player, this);
                 break;
             case "block":
-                command = new BlockCommand(player,map);
-
+                command = new BlockCommand(player, this);
                 break;
         }
         Invoker invoker = new Invoker(command);
         invoker.action();
-        this.flush();
+        flush();
+        if (!commandString.toLowerCase().equals("roll")) this.readCommand(player);
     }
 
 }

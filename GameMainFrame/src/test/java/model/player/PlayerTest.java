@@ -1,4 +1,5 @@
-import model.player.Player;
+package model.player;
+
 import org.junit.Before;
 import org.junit.Test;
 
@@ -11,7 +12,7 @@ import java.util.ArrayList;
  * Time: 下午7:14
  */
 public class PlayerTest {
-    ArrayList<Player> players = new ArrayList<Player>();
+    ArrayList<Player> players = new ArrayList<>();
 
     @Before
     public void setup() {
