@@ -17,16 +17,17 @@ public class BuildingCellTest {
     public void testAction() throws Exception {
         buildingCell.setOwner(player2);
         buildingCell.charge(player1);
-        assert player2.property.getMoney()==1200;
+        assert player2.property.getMoney()==1000;
         assert player1.property.getMoney()==800;
     }
     @Test
     public void testLeverUp() throws Exception {
         buildingCell.setOwner(player2);
         assert buildingCell.charge(player1) == 200;
-        assert player2.property.getMoney()==1200;
+        assert player2.property.getMoney()==1000;
         buildingCell.leverUp();
         assert buildingCell.charge(player1) == 300;
-        assert player2.property.getMoney()==1500;
+        assert player2.property.getMoney()==1300;
+        assert buildingCell.mark=='1';
     }
 }

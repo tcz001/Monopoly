@@ -5,6 +5,7 @@ import enigma.core.Enigma;
 import model.command.*;
 import model.map.Map;
 import model.player.Player;
+import model.toy.Toy;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -18,11 +19,13 @@ import java.util.HashSet;
 public class GamePad {
     public Map map;
     public ArrayList<Player> players;
+    public ArrayList<Toy> toys;
     public Console console = Enigma.getConsole();
 
     public GamePad(Map map, ArrayList<Player> players) {
         this.map = map;
         this.players = players;
+        this.toys = new ArrayList<>();
     }
 
     public void print() throws IOException {
@@ -52,35 +55,35 @@ public class GamePad {
 
     private void readCommand(Player player) throws IOException {
         Command command = null;
-        HashSet<String> commandSet = new HashSet<>();
-        commandSet.add("roll");
-        commandSet.add("info");
-        commandSet.add("block");
         String commandString;
-        do {
-            flush();
-            player.printPrompt(this);
-            console.getTextWindow().setCursorPosition(16, 10);
-            commandString = console.readLine();
-        }
-        while (!commandSet.contains(commandString.toLowerCase()));
-        switch (commandString.toLowerCase()) {
-            case "roll":
-                command = new RollCommand(player, this);
-                break;
-            case "info":
-                command = new InfoCommand(player, this);
-                break;
-            case "block":
-                command = new BlockCommand(player, this);
-                break;
+        flush();
+        player.printPrompt(this);
+        console.getTextWindow().setCursorPosition(16, 10);
+        commandString = console.readLine();
+        String s = commandString.toLowerCase();
+        if (s.equals("roll")) {
+            command = new RollCommand(player, this);
+
+        } else if (s.equals("info")) {
+            command = new InfoCommand(player, this);
+
+        } else if (s.matches("bomb [0-9]*")) {
+            int position = Integer.parseInt(s.split(" ")[1]);
+            command = new BombCommand(player, this, position);
+
+        } else if (s.matches("block [0-9]*")) {
+            int position = Integer.parseInt(s.split(" ")[1]);
+            command = new BlockCommand(player, this, position);
+
+        } else {
+            this.readCommand(player);
+            return;
         }
         Invoker invoker = new Invoker(command);
         invoker.action();
         flush();
         if (!commandString.toLowerCase().equals("roll")) this.readCommand(player);
     }
-
 }
 
 

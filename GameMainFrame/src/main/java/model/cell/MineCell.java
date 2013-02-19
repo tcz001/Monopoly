@@ -20,7 +20,7 @@ public class MineCell extends Cell {
 
     @Override
     public void action(Player player) {
-        //To change body of implemented methods use File | Settings | File Templates.
+        player.property.setPoint(player.property.getPoint()+point);
     }
 
     @Override

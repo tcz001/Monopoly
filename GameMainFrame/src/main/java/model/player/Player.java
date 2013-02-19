@@ -71,7 +71,8 @@ public class Player {
 
     public void printInfo(GamePad gamePad) {
         gamePad.erase();
-        System.out.println(name + " money " + property.getMoney());
+        System.out.println(name);
+        System.out.println(property.toString());
         gamePad.console.readLine();
     }
 

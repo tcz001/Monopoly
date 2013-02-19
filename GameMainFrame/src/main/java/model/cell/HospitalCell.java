@@ -24,7 +24,7 @@ public class HospitalCell extends Cell {
 
     @Override
     public void printOnPad(GamePad gamePad) {
-        gamePad.console.setTextAttributes(new TextAttributes(Color.RED));
+        gamePad.console.setTextAttributes(new TextAttributes(Color.LIGHT_GRAY));
         System.out.print(mark);
     }
 }

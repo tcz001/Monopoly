@@ -54,4 +54,15 @@ public class Property {
     public void setMoney(int money) {
         this.money = money;
     }
+
+    @Override
+    public String toString() {
+        return "Property{" +
+                "\n money=" + money +
+                "\n point=" + point +
+                "\n bomb=" + bomb +
+                "\n block=" + block +
+                "\n robot=" + robot +
+                '}';
+    }
 }

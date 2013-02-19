@@ -58,7 +58,7 @@ public class BuildingCell extends Cell {
 
     void leverUp() {
         this.lever++;
-        this.mark = (char) this.lever;
+        this.mark = Integer.toString(this.lever).charAt(0);
         this.price *= 1.5;
     }
 

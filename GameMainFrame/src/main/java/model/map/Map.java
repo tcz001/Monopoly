@@ -3,6 +3,7 @@ package model.map;
 import model.cell.*;
 import model.gamepad.GamePad;
 import model.player.Player;
+import model.toy.Toy;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -53,8 +54,12 @@ public class Map {
         gamePad.console.getTextWindow().setCursorPosition(1, height);
         for (int i = 0; i < width; i++)
             cells.get(width * 2 + height - 3 - i).printOnPad(gamePad);
+
         for (Player aPlayer : gamePad.players) {
             aPlayer.printOnPad(gamePad);
+        }
+        for (Toy aToy : gamePad.toys) {
+            aToy.printOnPad(gamePad);
         }
         gamePad.console.getTextWindow().setCursorPosition(0, height + 2);
     }

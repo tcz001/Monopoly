@@ -2,20 +2,19 @@ package model.command;
 
 import model.gamepad.GamePad;
 import model.player.Player;
-import model.toy.Block;
+import model.toy.Bomb;
 
 /**
- * Created with IntelliJ IDEA.
  * User: tcz
- * Date: 13-2-12
- * Time: 上午11:38
+ * Date: 13-2-19
+ * Time: 下午7:30
  */
-public class BlockCommand implements Command {
+public class BombCommand implements Command {
     private Player player;
     private GamePad gamePad;
     private int position;
 
-    public BlockCommand(Player player, GamePad gamePad, int position) {
+    public BombCommand(Player player, GamePad gamePad, int position) {
         this.player = player;
         this.gamePad = gamePad;
         this.position = position;
@@ -25,7 +24,7 @@ public class BlockCommand implements Command {
     public void execute() {
         if (this.player.property.getBomb() > 0) {
             player.property.setBomb(player.property.getBomb()-1);
-            gamePad.toys.add(new Block(position));
+            gamePad.toys.add(new Bomb(position));
         }
     }
 }
