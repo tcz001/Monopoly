@@ -25,7 +25,7 @@ public class BuildingCell extends Cell {
     }
 
     void setOwner(Player owner) {
-        owner.property.setMoney(owner.property.getMoney()-this.rawPrice);
+        owner.property.setMoney(owner.property.getMoney() - this.rawPrice);
         this.owner = owner;
     }
 
@@ -51,15 +51,15 @@ public class BuildingCell extends Cell {
     }
 
     int charge(Player player) {
-        player.property.setMoney(player.property.getMoney() - this.price);
-        this.owner.property.setMoney(this.owner.property.getMoney() + this.price);
+        player.property.setMoney(player.property.getMoney() - this.price / 2);
+        this.owner.property.setMoney(this.owner.property.getMoney() + this.price / 2);
         return this.price;
     }
 
     void leverUp() {
         this.lever++;
         this.mark = Integer.toString(this.lever).charAt(0);
-        this.price *= 1.5;
+        this.price *= 2;
     }
 
     @Override

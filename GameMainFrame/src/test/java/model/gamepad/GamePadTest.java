@@ -18,6 +18,11 @@ public class GamePadTest {
     Street street;
     Map map;
     ArrayList<Player> players;
+
+    public GamePad getGamePad() {
+        return gamePad;
+    }
+
     GamePad gamePad;
 
     @Before
@@ -38,12 +43,12 @@ public class GamePadTest {
         players.add(new Player(2, 10000));
         players.add(new Player(3, 10000));
         players.add(new Player(4, 10000));
+        gamePad = new GamePad(map, players);
     }
 
     @Test
     public void testGamePad() throws Exception {
         setUp();
-        gamePad = new GamePad(map, players);
         gamePad.print();
     }
 

@@ -2,9 +2,11 @@ package model.player;
 
 import enigma.console.TextAttributes;
 import model.gamepad.GamePad;
+import model.toy.Block;
+import model.toy.Bomb;
+import model.toy.Toy;
 
 import java.awt.*;
-import java.io.IOException;
 import java.util.Random;
 
 /**
@@ -57,10 +59,31 @@ public class Player {
         property = new Property(money, 0, 0, 0, 0);
     }
 
-    public int roll() {
+    public int roll(GamePad gamePad) {
         int rollnum = new Random().nextInt(6) + 1;
+        int exPosition = this.position;
         this.position = (position + rollnum) % 69;
+        Toy nearestBlock = null;
+        for (Toy toy : gamePad.toys) {
+            if (toy.getClass() == Block.class && toy.getPosition() > exPosition && toy.getPosition() < this.getPosition()) {
+                this.position = toy.getPosition();
+                nearestBlock = toy;
+            }
+        }
+        if (nearestBlock != null) {
+            gamePad.toys.remove(nearestBlock);
+        }
+        for (Toy toy : gamePad.toys) {
+            if (toy.getClass() == Bomb.class && toy.getPosition() == this.getPosition()) {
+                this.sentToHospital();
+            }
+        }
         return rollnum;
+    }
+
+    private void sentToHospital() {
+        //To change body of created methods use File | Settings | File Templates.
+        System.out.println("sent to hos");
     }
 
     public void printPrompt(GamePad gamePad) {

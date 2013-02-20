@@ -11,15 +11,15 @@ import java.awt.*;
  * Time: 下午5:50
  */
 public abstract class Toy {
-    private final int id;
     private final char mark;
     private final Color color;
+    private final int price;
     private int position;
 
-    public Toy(int id, char mark, Color color, int position) {
-        this.id = id;
+    public Toy(char mark, Color color, int price, int position) {
         this.mark = mark;
         this.color = color;
+        this.price = price;
         this.position = position;
     }
 
@@ -42,5 +42,13 @@ public abstract class Toy {
         gamePad.console.setTextAttributes(new TextAttributes(color));
         System.out.print(mark);
         gamePad.console.setTextAttributes(new TextAttributes(Color.white));
+    }
+
+    public int getPosition() {
+        return position;
+    }
+
+    public int getPrice() {
+        return price;
     }
 }

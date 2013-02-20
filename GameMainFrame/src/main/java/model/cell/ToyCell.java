@@ -4,10 +4,13 @@ import enigma.console.TextAttributes;
 import enigma.core.Enigma;
 import model.gamepad.GamePad;
 import model.player.Player;
+import model.toy.Block;
 import model.toy.Bomb;
+import model.toy.Robot;
 import model.toy.Toy;
 
 import java.awt.*;
+
 
 /**
  * User: tcz
@@ -22,16 +25,35 @@ public class ToyCell extends Cell {
     @Override
     public void action(Player player) {
         System.out.println("1.Bomb    价格:100 point");
-        System.out.println("2.Block   价格:100 point");
-        System.out.println("3.Robot   价格:100 point");
-        if (Enigma.getConsole().readLine().equals("1")) {
-            charge(new Bomb(),player);
+        System.out.println("2.Robot   价格:100 point");
+        System.out.println("3.Block   价格:100 point");
+        System.out.println("输入1,2,3，或任意其他键回车放弃");
+        String choice = Enigma.getConsole().readLine();
+        switch (choice) {
+            case "1":
+                charge(new Block(), player);
+                break;
+            case "2":
+                charge(new Robot(), player);
+                break;
+            case "3":
+                charge(new Bomb(), player);
         }
     }
 
     public void charge(Toy toy, Player player) {
-        if (toy.getClass() == Bomb.class)
-            player.property.setBomb(player.property.getBomb() + 1);
+        if ((player.property.getPoint() - toy.getPrice() > 0)) {
+            if (toy.getClass() == Bomb.class) {
+                player.property.setPoint(player.property.getPoint() - toy.getPrice());
+                player.property.setBomb(player.property.getBomb() + 1);
+            } else if (toy.getClass() == Robot.class) {
+                player.property.setPoint(player.property.getPoint() - toy.getPrice());
+                player.property.setRobot(player.property.getRobot() + 1);
+            } else if (toy.getClass() == Block.class) {
+                player.property.setPoint(player.property.getPoint() - toy.getPrice());
+                player.property.setBlock(player.property.getBlock() + 1);
+            }
+        }
     }
 
     @Override

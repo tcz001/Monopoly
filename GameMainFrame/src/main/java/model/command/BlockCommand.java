@@ -23,8 +23,8 @@ public class BlockCommand implements Command {
 
     @Override
     public void execute() {
-        if (this.player.property.getBomb() > 0) {
-            player.property.setBomb(player.property.getBomb()-1);
+        if (this.player.property.getBlock() > 0) {
+            player.property.setBlock(player.property.getBlock() - 1);
             gamePad.toys.add(new Block(position));
         }
     }

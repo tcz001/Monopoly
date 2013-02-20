@@ -1,7 +1,6 @@
 package model.command;
 
 import model.gamepad.GamePad;
-import model.map.Map;
 import model.player.Player;
 
 /**
@@ -21,7 +20,7 @@ public class RollCommand implements Command {
 
     @Override
     public void execute() {
-        player.roll();
+        player.roll(gamePad);
         gamePad.flush();
         player.printPrompt(gamePad);
         System.out.println();

@@ -1,5 +1,6 @@
 package model.player;
 
+import model.gamepad.GamePadTest;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -14,15 +15,19 @@ import java.util.ArrayList;
 public class PlayerTest {
     ArrayList<Player> players = new ArrayList<>();
 
+    GamePadTest gamePadTest;
+
     @Before
-    public void setup() {
+    public void setUp() throws Exception {
         for (int i = 0; i < 4; i++) players.add(i, new Player(i + 1, 1000));
+        gamePadTest.setUp();
     }
 
     @Test
     public void testRoll() {
         assert players.get(3).getId() == 4;
         assert players.get(3).getColor() == Color.YELLOW;
-        for (int i = 0; i < 100; i++) assert (players.get(3).roll() >= 1 && players.get(3).roll() <= 6);
+        for (int i = 0; i < 100; i++)
+            assert (players.get(3).roll(gamePadTest.getGamePad()) >= 1 && players.get(3).roll(gamePadTest.getGamePad()) <= 6);
     }
 }

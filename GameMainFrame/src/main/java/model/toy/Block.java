@@ -8,13 +8,11 @@ import java.awt.*;
  * Time: 下午7:55
  */
 public class Block extends Toy {
-    public Block(){
-        super(1,'|',Color.RED,-1);
+    public Block() {
+        super('|', Color.RED, 100, -1);
     }
-    public Block(int position){
-        super(1,'|',Color.RED,position);
-    }
-    public Block(int id, char mark, Color color, int position) {
-        super(id, mark, color, position);
+
+    public Block(int position) {
+        super('|', Color.RED, 100, position);
     }
 }

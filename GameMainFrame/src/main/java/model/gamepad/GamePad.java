@@ -9,7 +9,6 @@ import model.toy.Toy;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.HashSet;
 
 /**
  * User: tcz
@@ -54,7 +53,7 @@ public class GamePad {
     }
 
     private void readCommand(Player player) throws IOException {
-        Command command = null;
+        Command command;
         String commandString;
         flush();
         player.printPrompt(this);
@@ -64,8 +63,8 @@ public class GamePad {
         if (s.equals("roll")) {
             command = new RollCommand(player, this);
 
-        } else if (s.equals("info")) {
-            command = new InfoCommand(player, this);
+        } else if (s.equals("query")) {
+            command = new QueryCommand(player, this);
 
         } else if (s.matches("bomb [0-9]*")) {
             int position = Integer.parseInt(s.split(" ")[1]);
