@@ -21,6 +21,7 @@ public class Player {
     private final Color color;
     private int position;
     public Property property;
+    boolean isInHospital;
 
     public Player(int id, int money) {
         this.id = id;
@@ -75,15 +76,17 @@ public class Player {
         }
         for (Toy toy : gamePad.toys) {
             if (toy.getClass() == Bomb.class && toy.getPosition() == this.getPosition()) {
-                this.sentToHospital();
+                this.sentToHospital(gamePad);
             }
         }
         return rollnum;
     }
 
-    private void sentToHospital() {
-        //To change body of created methods use File | Settings | File Templates.
-        System.out.println("sent to hos");
+    private void sentToHospital(GamePad gamePad) {
+        System.out.println("Bomb!!! You got hurted by a Bomb, now sent to hospital.... (press any key to continue)");
+        this.position = 14;
+        this.isInHospital = true;
+        gamePad.console.readLine();
     }
 
     public void printPrompt(GamePad gamePad) {
@@ -96,6 +99,7 @@ public class Player {
         gamePad.erase();
         System.out.println(name);
         System.out.println(property.toString());
+        System.out.println("(press any key to continue)");
         gamePad.console.readLine();
     }
 
