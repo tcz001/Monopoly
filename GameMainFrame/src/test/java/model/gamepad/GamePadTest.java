@@ -47,12 +47,12 @@ public class GamePadTest {
     }
 
     @Test
-    public void testGamePad() throws Exception {
+    public void testPrint() throws Exception {
         setUp();
         gamePad.print();
     }
 
     public void main(String[] args) throws Exception {
-        testGamePad();
+        testPrint();
     }
 }

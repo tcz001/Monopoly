@@ -15,7 +15,7 @@ import java.util.ArrayList;
 public class PlayerTest {
     ArrayList<Player> players = new ArrayList<>();
 
-    GamePadTest gamePadTest;
+    GamePadTest gamePadTest = new GamePadTest();
 
     @Before
     public void setUp() throws Exception {
@@ -29,5 +29,11 @@ public class PlayerTest {
         assert players.get(3).getColor() == Color.YELLOW;
         for (int i = 0; i < 100; i++)
             assert (players.get(3).roll(gamePadTest.getGamePad()) >= 1 && players.get(3).roll(gamePadTest.getGamePad()) <= 6);
+    }
+
+    @Test
+    public void testSentToHospital() throws Exception {
+        this.players.get(1).sentToHospital(gamePadTest.getGamePad());
+        assert this.players.get(1).isInHospital;
     }
 }

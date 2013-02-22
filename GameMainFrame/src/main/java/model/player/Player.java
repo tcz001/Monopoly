@@ -82,7 +82,7 @@ public class Player {
         return rollnum;
     }
 
-    private void sentToHospital(GamePad gamePad) {
+    void sentToHospital(GamePad gamePad) {
         System.out.println("Bomb!!! You got hurted by a Bomb, now sent to hospital.... (press any key to continue)");
         this.position = 14;
         this.isInHospital = true;
