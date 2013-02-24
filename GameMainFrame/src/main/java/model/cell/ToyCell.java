@@ -24,9 +24,9 @@ public class ToyCell extends Cell {
 
     @Override
     public void action(Player player) {
-        System.out.println("1.Bomb    价格:100 point");
-        System.out.println("2.Robot   价格:100 point");
-        System.out.println("3.Block   价格:100 point");
+        System.out.println("1.Bomb    价格:"+new Bomb().getPrice()+" point");
+        System.out.println("2.Robot   价格:"+new Robot().getPrice()+" point");
+        System.out.println("3.Block   价格:"+new Block().getPrice()+" point");
         System.out.println("输入1,2,3，或任意其他键回车放弃");
         String choice = Enigma.getConsole().readLine();
         switch (choice) {
