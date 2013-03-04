@@ -46,10 +46,13 @@ public class BuildingCell extends Cell {
                     this.leverUp();
                 }
             }
-        } else if (player.isLucky == 0){
+        } else if (player.isLucky == 0 && owner.isInPrison == 0 && owner.isInPrison == 0) {
             if (player.property.getMoney() > this.rawPrice) {
                 this.charge(player);
             }
+        } else if (player.isLucky > 0) {
+            System.out.println("福神附身，可免过路费");
+            Enigma.getConsole().readLine();
         }
     }
 
@@ -60,7 +63,7 @@ public class BuildingCell extends Cell {
     }
 
     void leverUp() {
-        this.owner.property.setMoney(this.owner.property.getMoney()-rawPrice);
+        this.owner.property.setMoney(this.owner.property.getMoney() - rawPrice);
         this.lever++;
         this.mark = Integer.toString(this.lever).charAt(0);
         this.price *= 2;
