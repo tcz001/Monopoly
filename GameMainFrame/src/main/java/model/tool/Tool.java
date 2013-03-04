@@ -1,4 +1,4 @@
-package model.toy;
+package model.tool;
 
 import enigma.console.TextAttributes;
 import model.gamepad.GamePad;
@@ -10,13 +10,13 @@ import java.awt.*;
  * Date: 13-2-19
  * Time: 下午5:50
  */
-public abstract class Toy {
+public abstract class Tool {
     private final char mark;
     private final Color color;
     private final int price;
     private int position;
 
-    public Toy(char mark, Color color, int price, int position) {
+    public Tool(char mark, Color color, int price, int position) {
         this.mark = mark;
         this.color = color;
         this.price = price;

@@ -1,4 +1,4 @@
-package model.toy;
+package model.tool;
 
 import java.awt.*;
 
@@ -7,7 +7,7 @@ import java.awt.*;
  * Date: 13-2-19
  * Time: 下午5:57
  */
-public class Bomb extends Toy {
+public class Bomb extends Tool {
     public Bomb() {
         super('B', Color.RED, 100, -1);
     }

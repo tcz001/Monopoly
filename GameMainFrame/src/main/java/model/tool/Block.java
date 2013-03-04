@@ -1,4 +1,4 @@
-package model.toy;
+package model.tool;
 
 import java.awt.*;
 
@@ -7,7 +7,7 @@ import java.awt.*;
  * Date: 13-2-19
  * Time: 下午7:55
  */
-public class Block extends Toy {
+public class Block extends Tool {
     public Block() {
         super('|', Color.RED, 100, -1);
     }

@@ -11,8 +11,8 @@ import java.awt.*;
  * Date: 13-2-2
  * Time: 上午11:06
  */
-public class PoisonCell extends Cell {
-    public PoisonCell() {
+public class PrisonCell extends Cell {
+    public PrisonCell() {
         super('P');
     }
 

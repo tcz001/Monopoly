@@ -4,10 +4,10 @@ import enigma.console.TextAttributes;
 import enigma.core.Enigma;
 import model.gamepad.GamePad;
 import model.player.Player;
-import model.toy.Block;
-import model.toy.Bomb;
-import model.toy.Robot;
-import model.toy.Toy;
+import model.toll.Block;
+import model.toll.Bomb;
+import model.toll.Robot;
+import model.toll.Toll;
 
 import java.awt.*;
 
@@ -17,8 +17,8 @@ import java.awt.*;
  * Date: 13-2-2
  * Time: 上午11:43
  */
-public class ToyCell extends Cell {
-    public ToyCell() {
+public class ToolCell extends Cell {
+    public ToolCell() {
         super('T');
     }
 
@@ -41,16 +41,16 @@ public class ToyCell extends Cell {
         }
     }
 
-    public void charge(Toy toy, Player player) {
-        if ((player.property.getPoint() - toy.getPrice() > 0)) {
-            if (toy.getClass() == Bomb.class) {
-                player.property.setPoint(player.property.getPoint() - toy.getPrice());
+    public void charge(Toll toll, Player player) {
+        if ((player.property.getPoint() - toll.getPrice() > 0)) {
+            if (toll.getClass() == Bomb.class) {
+                player.property.setPoint(player.property.getPoint() - toll.getPrice());
                 player.property.setBomb(player.property.getBomb() + 1);
-            } else if (toy.getClass() == Robot.class) {
-                player.property.setPoint(player.property.getPoint() - toy.getPrice());
+            } else if (toll.getClass() == Robot.class) {
+                player.property.setPoint(player.property.getPoint() - toll.getPrice());
                 player.property.setRobot(player.property.getRobot() + 1);
-            } else if (toy.getClass() == Block.class) {
-                player.property.setPoint(player.property.getPoint() - toy.getPrice());
+            } else if (toll.getClass() == Block.class) {
+                player.property.setPoint(player.property.getPoint() - toll.getPrice());
                 player.property.setBlock(player.property.getBlock() + 1);
             }
         }
