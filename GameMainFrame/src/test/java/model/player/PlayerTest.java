@@ -1,5 +1,6 @@
 package model.player;
 
+import model.cell.BuildingCell;
 import model.gamepad.GamePadTest;
 import org.junit.Before;
 import org.junit.Test;
@@ -33,7 +34,23 @@ public class PlayerTest {
 
     @Test
     public void testSentToHospital() throws Exception {
-        this.players.get(1).sentToHospital(gamePadTest.getGamePad());
-        assert this.players.get(1).isInHospital;
+        this.players.get(1).sentToHospital();
+        assert this.players.get(1).isInHospital > 0;
+    }
+
+    @Test
+    public void testSentToPrison() throws Exception {
+        this.players.get(1).sentToPrison();
+        assert this.players.get(1).isInPrison > 0;
+    }
+
+    @Test
+    public void testSell() {
+        BuildingCell buildingCell = (BuildingCell) this.gamePadTest.getGamePad().map.cells.get(4);
+        buildingCell.boughtBy(this.players.get(1));
+        int before = this.players.get(1).property.getMoney();
+        players.get(1).sell(gamePadTest.getGamePad(), 4);
+        int after = this.players.get(1).property.getMoney();
+        assert ((before + buildingCell.getRawPrice() * 2) == after);
     }
 }

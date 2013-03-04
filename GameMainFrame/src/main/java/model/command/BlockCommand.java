@@ -2,7 +2,7 @@ package model.command;
 
 import model.gamepad.GamePad;
 import model.player.Player;
-import model.toy.Block;
+import model.tool.Block;
 
 /**
  * Created with IntelliJ IDEA.
@@ -23,9 +23,9 @@ public class BlockCommand implements Command {
 
     @Override
     public void execute() {
-        if (this.player.property.getBlock() > 0) {
+        if (this.player.property.getBlock() > 0 && position <= 10 && position > -10) {
             player.property.setBlock(player.property.getBlock() - 1);
-            gamePad.toys.add(new Block(position));
+            gamePad.tools.add(new Block(position+player.getPosition()));
         }
     }
 }

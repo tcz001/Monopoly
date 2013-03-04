@@ -1,6 +1,7 @@
 package model.cell;
 
 import enigma.console.TextAttributes;
+import enigma.core.Enigma;
 import model.gamepad.GamePad;
 import model.player.Player;
 
@@ -18,7 +19,8 @@ public class PrisonCell extends Cell {
 
     @Override
     public void action(Player player) {
-        //To change body of implemented methods use File | Settings | File Templates.
+        player.sentToPrison();
+        Enigma.getConsole().readLine();
     }
 
     @Override

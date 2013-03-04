@@ -4,10 +4,10 @@ import enigma.console.TextAttributes;
 import enigma.core.Enigma;
 import model.gamepad.GamePad;
 import model.player.Player;
-import model.toll.Block;
-import model.toll.Bomb;
-import model.toll.Robot;
-import model.toll.Toll;
+import model.tool.Block;
+import model.tool.Bomb;
+import model.tool.Robot;
+import model.tool.Tool;
 
 import java.awt.*;
 
@@ -38,19 +38,20 @@ public class ToolCell extends Cell {
                 break;
             case "3":
                 charge(new Bomb(), player);
+                break;
         }
     }
 
-    public void charge(Toll toll, Player player) {
-        if ((player.property.getPoint() - toll.getPrice() > 0)) {
-            if (toll.getClass() == Bomb.class) {
-                player.property.setPoint(player.property.getPoint() - toll.getPrice());
+    public void charge(Tool tool, Player player) {
+        if ((player.property.getPoint() - tool.getPrice() > 0)) {
+            if (tool.getClass() == Bomb.class) {
+                player.property.setPoint(player.property.getPoint() - tool.getPrice());
                 player.property.setBomb(player.property.getBomb() + 1);
-            } else if (toll.getClass() == Robot.class) {
-                player.property.setPoint(player.property.getPoint() - toll.getPrice());
+            } else if (tool.getClass() == Robot.class) {
+                player.property.setPoint(player.property.getPoint() - tool.getPrice());
                 player.property.setRobot(player.property.getRobot() + 1);
-            } else if (toll.getClass() == Block.class) {
-                player.property.setPoint(player.property.getPoint() - toll.getPrice());
+            } else if (tool.getClass() == Block.class) {
+                player.property.setPoint(player.property.getPoint() - tool.getPrice());
                 player.property.setBlock(player.property.getBlock() + 1);
             }
         }

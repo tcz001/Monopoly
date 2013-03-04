@@ -15,14 +15,14 @@ public class BuildingCellTest {
 
     @Test
     public void testAction() throws Exception {
-        buildingCell.setOwner(player2);
+        buildingCell.boughtBy(player2);
         buildingCell.charge(player1);
         assert player2.property.getMoney()==1000;
         assert player1.property.getMoney()==800;
     }
     @Test
     public void testLeverUp() throws Exception {
-        buildingCell.setOwner(player2);
+        buildingCell.boughtBy(player2);
         assert buildingCell.charge(player1) == 200;
         assert player2.property.getMoney()==1000;
         buildingCell.leverUp();

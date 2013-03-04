@@ -1,10 +1,12 @@
 package model.player;
 
 import enigma.console.TextAttributes;
+import enigma.core.Enigma;
+import model.cell.BuildingCell;
 import model.gamepad.GamePad;
-import model.toy.Block;
-import model.toy.Bomb;
-import model.toy.Toy;
+import model.tool.Block;
+import model.tool.Bomb;
+import model.tool.Tool;
 
 import java.awt.*;
 import java.util.Random;
@@ -21,16 +23,13 @@ public class Player {
     private final Color color;
     private int position;
     public Property property;
-    boolean isInHospital;
+    public int isInHospital;
+    public int isInPrison;
+    public int isLucky;
 
     public Player(int id, int money) {
         this.id = id;
         switch (id) {
-            case 0:
-                name = "no name";
-                mark = 'N';
-                color = Color.WHITE;
-                break;
             case 1:
                 name = "钱夫人";
                 mark = 'Q';
@@ -52,43 +51,51 @@ public class Player {
                 color = Color.YELLOW;
                 break;
             default:
-                name = "no name";
+                name = "default";
                 mark = 'N';
                 color = Color.WHITE;
                 break;
         }
         property = new Property(money, 0, 0, 0, 0);
+        isInHospital = 0;
+        isInPrison = 0;
+        isLucky = 0;
     }
 
     public int roll(GamePad gamePad) {
         int rollnum = new Random().nextInt(6) + 1;
         int exPosition = this.position;
         this.position = (position + rollnum) % 69;
-        Toy nearestBlock = null;
-        for (Toy toy : gamePad.toys) {
-            if (toy.getClass() == Block.class && toy.getPosition() > exPosition && toy.getPosition() < this.getPosition()) {
-                this.position = toy.getPosition();
-                nearestBlock = toy;
+        Tool nearestBlock = null;
+        for (Tool tool : gamePad.tools) {
+            if (tool.getClass() == Block.class && tool.getPosition() > exPosition && tool.getPosition() < this.getPosition()) {
+                this.position = tool.getPosition();
+                nearestBlock = tool;
             }
         }
         if (nearestBlock != null) {
-            gamePad.toys.remove(nearestBlock);
+            gamePad.tools.remove(nearestBlock);
         }
-        for (Toy toy : gamePad.toys) {
-            if (toy.getClass() == Bomb.class && toy.getPosition() == this.getPosition()) {
-                this.sentToHospital(gamePad);
+        for (Tool tool : gamePad.tools) {
+            if (tool.getClass() == Bomb.class && tool.getPosition() == this.getPosition()) {
+                this.sentToHospital();
             }
         }
         return rollnum;
     }
 
-    void sentToHospital(GamePad gamePad) {
-        System.out.println("Bomb!!! You got hurted by a Bomb, now sent to hospital.... (press any key to continue)");
+    void sentToHospital() {
+        System.out.println("Bomb!!! You got hurt by a Bomb, now sent to Hospital.... (press any key to continue)");
         this.position = 14;
-        this.isInHospital = true;
-        gamePad.console.readLine();
+        this.isInHospital = 3;
+        Enigma.getConsole().readLine();
     }
 
+    public void sentToPrison() {
+        System.out.println("Sorry!!! You are now sent to Prison.... (press any key to continue)");
+        this.position = 49;
+        this.isInPrison = 2;
+    }
     public void printPrompt(GamePad gamePad) {
         gamePad.console.setTextAttributes(new TextAttributes(color));
         System.out.print(name + " 位于 " + position + " >");
@@ -144,4 +151,15 @@ public class Player {
         return color;
     }
 
+    public void sell(GamePad gamePad, int position) {
+        if (gamePad.map.cells.get(position).getClass() == BuildingCell.class) {
+            BuildingCell buildingCell = (BuildingCell) gamePad.map.cells.get(position);
+            if (buildingCell.getOwner() == this) buildingCell.sold();
+            else {
+                System.out.println("Wrong position ! is it a BuildingCell ? ,and be sure thar you own it!");
+                System.out.println("(press any key to continue)");
+                gamePad.console.readLine();
+            }
+        }
+    }
 }

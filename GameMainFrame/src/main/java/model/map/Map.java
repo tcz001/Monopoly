@@ -3,7 +3,7 @@ package model.map;
 import model.cell.*;
 import model.gamepad.GamePad;
 import model.player.Player;
-import model.toy.Toy;
+import model.tool.Tool;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -14,7 +14,7 @@ import java.util.Arrays;
  * Time: 下午8:26
  */
 public class Map {
-    ArrayList<Cell> cells;
+    public ArrayList<Cell> cells;
     final int width = 29, height = 8;
 
     public Map(ArrayList<Street> streets) {
@@ -23,11 +23,11 @@ public class Map {
         cells.addAll(streets.get(0).cells);
         cells.add(new HospitalCell());
         cells.addAll(streets.get(1).cells);
-        cells.add(new ToyCell());
+        cells.add(new ToolCell());
         cells.addAll(streets.get(2).cells);
         cells.add(new GiftCell());
         cells.addAll(streets.get(3).cells);
-        cells.add(new PoisonCell());
+        cells.add(new PrisonCell());
         cells.addAll(streets.get(4).cells);
         cells.add(new MagicCell());
         cells.add(new MineCell(20));
@@ -58,8 +58,8 @@ public class Map {
         for (Player aPlayer : gamePad.players) {
             aPlayer.printOnPad(gamePad);
         }
-        for (Toy aToy : gamePad.toys) {
-            aToy.printOnPad(gamePad);
+        for (Tool aTool : gamePad.tools) {
+            aTool.printOnPad(gamePad);
         }
         gamePad.console.getTextWindow().setCursorPosition(0, height + 2);
     }
