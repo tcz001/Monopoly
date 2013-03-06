@@ -9,10 +9,10 @@ import java.awt.*;
  */
 public class Bomb extends Tool {
     public Bomb() {
-        super('B', Color.RED, 100, -1);
+        super('@', Color.RED, 50, -1);
     }
 
     public Bomb(int position) {
-        super('B', Color.RED, 100, position);
+        super('@', Color.RED, 50, position);
     }
 }
