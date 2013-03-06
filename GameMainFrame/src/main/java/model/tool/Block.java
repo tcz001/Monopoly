@@ -9,10 +9,10 @@ import java.awt.*;
  */
 public class Block extends Tool {
     public Block() {
-        super('|', Color.RED, 100, -1);
+        super('#', Color.RED, 50, -1);
     }
 
     public Block(int position) {
-        super('|', Color.RED, 100, position);
+        super('#', Color.RED, 50, position);
     }
 }
