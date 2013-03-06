@@ -12,7 +12,7 @@ import java.util.ArrayList;
  */
 public class Robot extends Tool {
     public Robot() {
-        super('R', Color.ORANGE, 100, -1);
+        super('R', Color.ORANGE, 30, -1);
     }
 
     public static void action(int position, GamePad gamePad) {
